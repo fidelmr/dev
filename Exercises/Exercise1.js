@@ -114,6 +114,31 @@ console.log (ij);
 
 /*OPERADORES LOGICOS*/
 
+let ax = 25
+let bz ='25'
+
+if ((ax==bz)&&(bz=25)){console.log ('se cumple todo')}
+else {(console.log ('hay algo diferente'))}
+
+/*revisar y consultar*/
+
+
+/*SWITCH*/
+
+
+/*ALERT*/
+
+alert ('Hola People');
+
+/*PROMPT*/
+
+/*prompt ('Escribe tu nombre');*/
+
+let Nombre = prompt ('Escribe tu nombre');
+console.log(' el nombre es :  ' + Nombre);
+
+
+
 
 
 
