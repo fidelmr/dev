@@ -23,6 +23,9 @@ function example() {
     let f= 5;
     console.log ( f );
   }
+
+ example()
+
 a=25;
 
 a ++;
@@ -86,6 +89,33 @@ console.log (y);
 y= parseInt (t)+ parseInt (u);
 
 console.log(y);
+
+/*CONDICIONALES*/
+let ab=8
+let cd=9
+
+if (ab==cd) {
+    console.log ('iguales');}
+   else { console.log ('diferentes')};
+
+let ef=25
+let gh='25'
+
+if (ef===gh) {console.log ('íguales en valor y tipo')}
+else if (ef==gh) {console.log ('iguales en valor')}
+else {console.log ('diferentes en valor y tipo')}
+
+
+
+ij= (ef==gh) ? 'iguales' : 'diferentes'
+
+console.log (ij);
+
+
+/*OPERADORES LOGICOS*/
+
+
+
 
 
 
