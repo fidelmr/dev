@@ -137,6 +137,60 @@ alert ('Hola People');
 let Nombre = prompt ('Escribe tu nombre');
 console.log(' el nombre es :  ' + Nombre);
 
+//Calculator Variables//
+let operation = prompt("1-Addition 2-Substract 3-Multiply 4-Divide .");
+let operator1 = parseInt(prompt("Introduce first operator number"));
+let operator2 = parseInt(prompt("Introduce second  operator number"));
+let result;
+
+//Addition Function//
+function addition (number1 , number2) {
+  return number1 + number2;
+}
+
+//Substration Function//
+function substract(number1 , number2) {
+ return number1 - number2;
+}
+
+//Multiply Function//
+function multiply(number1 , number2) {
+  return number1 * number2;
+}
+
+//Divide Function//
+function divide(number1 , number2) {
+ return number1 / number2;
+}
+
+switch (operation) {
+  case "1":
+    result = addition (operator1 , operator2) 
+      document.write ("Addition result is: " + result) ;
+      break;
+
+  case "2":
+    result = substract (operator1 , operator2) 
+      document.write ("Substract result is: " + result) ;
+      break;
+
+  case "3":
+    result = multiply (operator1 , operator2) 
+      document.write ("Multiply result is: " + result) ;
+      break;
+        
+  case "4":
+    result = divide (operator1 , operator2) 
+      document.write ("Divide result is: " + result) ;
+      break;
+
+  default:
+    alert ("No valid option for operation.") ;
+    break;
+            
+}
+
+
 
 
 
