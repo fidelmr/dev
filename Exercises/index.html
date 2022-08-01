@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKE WORLD</title>
+
+    <!-- Afegim les fonts de Google que ens facin falta -->
+    <!-- Afegim els estils generals CSS -->
+    <link rel="stylesheet" href="css/estils_generals.css">
+    <!-- Afegim els estils particulars de la pagina -->
+    <link rel="stylesheet" href="css/estils_index.css">
+    <!-- Afegim els scripts amb carrega diferida de JS -->
+    <!-- NOTA: Els podem posar tambe a la part inferior just abans del tag body -->
+    <!-- NOTA: la etiqueta 'defer' fa que els scripts es corrin DESPRES de llegir el HTML -->
+    <!-- mes info: https://www.w3schools.com/tags/att_script_defer.asp -->
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <!-- Afegim un contenidor 'master' per gestionar posicions -->
+    <div class="container">
+       
+        <header>
+            <!-- Afegim un titol a la web .... -->
+            <div class="titol">
+                <h1>Pokemon Battles</h1>
+            </div>
+
+            <!-- Afegim una barra de navegacio .... -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">LLISTATS</a>
+                    </li>
+                    <li>
+                        <a href="combat.html">COMBATS</a>
+                    </li>
+                </ul>
+                <!-- Afegim un selector per triar el tema clar/fosc .... -->
+                <ul>
+                    <li>TEMA CLAR</li>
+                    <li>TEMA FOSC</li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            <section class="info" id="info">
+                <!-- Sols es mostra aquesta seccio fins que el JS no ha acabat -->
+                <h3>Carregant dades de la API de PokeRest.</h3>
+                <h3>Esperi si us plau .....</h3>
+                <img src="media/imatge/loading-4.gif" height="50px" alt="Imatge que mostra una icona de carrega">
+            </section>
+
+            <section class="llistat" id="llistat">
+                <!-- Afegim un titols a la seccio -->
+                <h4>Llistat de 10 cartes de pokemons aleatoris</h4>
+                <!-- Afegim el contingut de la seccio via JS -->
+                <div id="llistat2">
+                    llistat de pokemons
+                </div>
+            </section>
+
+            <section class="detall" id="detall">
+            <!-- Afegim un titols a la seccio -->
+                <h4>Detall del pokemon seleccionat</h4>
+                <!-- Afegim el contingut de la seccio via JS -->  
+                <div id="detall2">
+                    detall de pokemon
+                </div>              
+            </section>
+        </main>
+
+        <footer>
+            <h4>pos aixo ... un footer ....</h4>
+        </footer>
+    </div>
+</body>
+</html>
