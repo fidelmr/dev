@@ -1,3 +1,4 @@
 
-var fidel = ("JavaScript");
-console.log=(fidel);
+var c = 15;
+console.log(c);
+
