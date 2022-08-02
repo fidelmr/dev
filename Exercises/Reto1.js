@@ -49,15 +49,24 @@ function requestValue(){
     return introNumber;
 }
 
-
 requestValue();
 
-function checkValue(value){
+
+/*function checkValue(value){
+    if(!Number.isNaN(value)){else {return false}};
+    
+    if(value==parseInt(value)){else{return false}};
+}
+
+
+
+checkValue();*/
+
+
     /* Comprovem si es NUMERO */
     /* -- Podem fer servir la funcio isNaN que es dira si NO es un NUMERO (Not_A_Number) */
     /* -- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN */
     /* NOTA: Number.isNaN(valor) es TRUE si No es un numero, per tant !Number.isNaN(valor) retorna TRU si ES un numero, pq el simbol "!" es la negacio del qeu ve despres */
-        if(!Number.isNaN(value)){else}{return false}};
+
     /* Comprovem si es ENTER */
     /* -- Podem fer servir parseInt o validar pel typeOf .... */
-    if(value==parseInt(value)){else{return false}};
